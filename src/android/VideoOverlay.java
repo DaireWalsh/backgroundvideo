@@ -76,6 +76,9 @@ public class VideoOverlay extends ViewGroup {
             recorder.setAudioSource(MediaRecorder.AudioSource.CAMCORDER);
             recorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);
 
+            //a BIT OF ME OWN CODE
+            recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+
             setProfile(recorder, cameraParameters);
             recorder.setOutputFile(filePath);
             recorder.setOrientationHint(90);
