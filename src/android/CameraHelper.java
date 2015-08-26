@@ -23,11 +23,10 @@ class CameraHelper {
 
         Camera.Size small = sl.get(0);
 
-        /*for(Camera.Size s : sl) {
+        for(Camera.Size s : sl) {
             if ((s.height * s.width) < (small.height * small.width))
                 small = s;
         }
-        */
 
         return small;
     }
