@@ -31,7 +31,7 @@ public class BackgroundVideo extends CordovaPlugin {
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
-        FILE_PATH = cordova.getActivity().getFilesDir().toString() + "/";
+        FILE_PATH = "file:/storage/emulated/0/Pictures/";
     }
 
 
